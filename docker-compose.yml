@@ -1,0 +1,36 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    command: sleep infinity
+    working_dir: /workspace
+    volumes: [".:/workspace:cached"]
+    environment:
+      DATABASE_URL: postgresql://underwriting:underwriting@postgres:5432/underwriting
+      OLLAMA_BASE_URL: http://ollama:11434
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ollama:
+        condition: service_started
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: underwriting
+      POSTGRES_USER: underwriting
+      POSTGRES_PASSWORD: underwriting
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U underwriting"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    ports: ["127.0.0.1:5432:5432"]
+    volumes: ["postgres-data:/var/lib/postgresql/data"]
+  ollama:
+    image: ollama/ollama:latest
+    ports: ["127.0.0.1:11434:11434"]
+    volumes: ["ollama-data:/root/.ollama"]
+volumes:
+  postgres-data:
+  ollama-data:
