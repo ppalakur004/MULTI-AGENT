@@ -1,0 +1,63 @@
+[
+  {
+    "applicant_id": "A-1001",
+    "full_name": "Alex Morgan",
+    "age": 35,
+    "coverage_tier": "STANDARD",
+    "smoker": false,
+    "declared_chronic_conditions": 0,
+    "hospitalizations_last_2_years": 0,
+    "occupation": "Software Engineer"
+  },
+  
+  {
+    "applicant_id": "A-1002",
+    "full_name": "Jordan Lee",
+    "age": 36,
+    "coverage_tier": "STANDARD",
+    "smoker": true,
+    "declared_chronic_conditions": 1,
+    "hospitalizations_last_2_years": 0,
+    "occupation": "Teacher"
+  },
+  {
+    "applicant_id": "A-1003",
+    "full_name": "Taylor Brooks",
+    "age": 37,
+    "coverage_tier": "PREMIUM",
+    "smoker": true,
+    "declared_chronic_conditions": 2,
+    "hospitalizations_last_2_years": 1,
+    "occupation": "Building Contractor"
+  },
+  {
+    "applicant_id": "A-1004",
+    "full_name": "Casey Rivera",
+    "age": 38,
+    "coverage_tier": "STANDARD",
+    "smoker": false,
+    "declared_chronic_conditions": 0,
+    "hospitalizations_last_2_years": 0,
+    "occupation": "Nurse"
+  },
+  {
+    "applicant_id": "A-1005",
+    "full_name": "Sam Patel",
+    "age": 39,
+    "coverage_tier": "BASIC",
+    "smoker": false,
+    "declared_chronic_conditions": 0,
+    "hospitalizations_last_2_years": 0,
+    "occupation": "Accountant"
+  },
+  {
+    "applicant_id": "A-1006",
+    "full_name": "Jamie Chen",
+    "age": 40,
+    "coverage_tier": "PREMIUM",
+    "smoker": false,
+    "declared_chronic_conditions": 1,
+    "hospitalizations_last_2_years": 0,
+    "occupation": "Project Manager"
+  }
+]

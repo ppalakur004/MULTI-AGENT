@@ -1,0 +1,8 @@
+{
+  "A-1001": {"identity_verified": true, "fraud_flag": false, "source": "mock_verification", "synthetic": true},
+  "A-1002": {"identity_verified": true, "fraud_flag": false, "source": "mock_verification", "synthetic": true},
+  "A-1003": {"identity_verified": true, "fraud_flag": false, "source": "mock_verification", "synthetic": true},
+  "A-1004": {"identity_verified": true, "fraud_flag": false, "source": "mock_verification", "synthetic": true},
+  "A-1005": {"identity_verified": false, "fraud_flag": false, "source": "mock_verification", "synthetic": true},
+  "A-1006": {"identity_verified": true, "fraud_flag": true, "source": "mock_verification", "synthetic": true}
+}

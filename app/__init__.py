@@ -1,1 +1,1 @@
-"""Application package. Implementation pending."""
+"""Synthetic health-insurance underwriting pipeline."""

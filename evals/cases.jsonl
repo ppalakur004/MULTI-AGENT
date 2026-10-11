@@ -1,1 +1,3 @@
-
+{"name":"low","expected_status":"COMPLETE","expected_action":"RECOMMEND_APPROVE","applicant_id":"A-1001"}
+{"name":"second-low","expected_status":"COMPLETE","expected_action":"RECOMMEND_APPROVE","applicant_id":"A-1004"}
+{"name":"fraud-review","expected_status":"HUMAN_REVIEW_REQUIRED","expected_action":"HUMAN_REVIEW","applicant_id":"A-1006"}

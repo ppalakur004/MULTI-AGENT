@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "applicant_id": "A-1001",
+    "age": 35,
+    "coverage_tier": "STANDARD",
+    "smoker": false,
+    "declared_chronic_conditions": 0,
+    "hospitalizations_last_2_years": 0,
+    "occupation": "Engineer",
+    "full_name": "Test Applicant"
+  },
+  {
+    "applicant_id": "A-1002",
+    "age": 40,
+    "coverage_tier": "STANDARD",
+    "smoker": true,
+    "declared_chronic_conditions": 1,
+    "hospitalizations_last_2_years": 0,
+    "full_name": "Test Applicant"
+  },
+  {
+    "applicant_id": "A-1003",
+    "age": 45,
+    "coverage_tier": "PREMIUM",
+    "smoker": true,
+    "declared_chronic_conditions": 2,
+    "hospitalizations_last_2_years": 1,
+    "full_name": "Test Applicant"
+  }
+]
