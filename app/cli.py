@@ -197,13 +197,13 @@ def invoke(coroutine, json_output: bool = False) -> None:
 
 def prompt_field(field: str, label: str, value_type=str, default=None):
     definition = Application.model_fields[field]
-    annotation = (
+    schema: Any = (
         Annotated[definition.annotation, *definition.metadata]
         if definition.metadata
         else definition.annotation
     )
     adapter: TypeAdapter[Any] = TypeAdapter(
-        annotation,
+        schema,
         config=ConfigDict(allow_inf_nan=False, str_strip_whitespace=True),
     )
     while True:

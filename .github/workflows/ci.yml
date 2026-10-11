@@ -23,6 +23,7 @@ jobs:
       - run: python -m ruff check app tests
       - run: python -m ruff format --check app tests
       - run: python -m mypy app --ignore-missing-imports
+      - run: mkdir -p .runs
       - run: python -m pytest -q --cov=app --cov-report=term-missing --cov-report=xml:.runs/coverage.xml --junitxml=.runs/test-results.xml --cov-fail-under=95
         env:
           RUN_POSTGRES_TESTS: "1"
